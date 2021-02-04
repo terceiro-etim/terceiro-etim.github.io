@@ -1,0 +1,28 @@
+body {
+    color: white;
+}
+
+.container {
+    display: flex;
+}
+
+.container > .column {
+    flex: 70%;
+}
+
+.container > .column + .column {
+    flex: 30%;
+}
+
+.text {
+    padding: clamp(3rem, 4rem, 5rem);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 20vh;
+}
+
+#camiseta {
+    width: clamp(45vw, 50vw, 65vw);
+}
