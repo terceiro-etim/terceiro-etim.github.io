@@ -15,14 +15,33 @@ body {
 }
 
 .text {
-    padding: clamp(3rem, 4rem, 5rem);
+    padding: clamp(1vw, 3rem, 5vw);
+    padding-bottom: 0;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-    height: 20vh;
+    height: clamp(8.5vw, 11rem, 18vw);
 }
 
 #camiseta {
-    width: clamp(45vw, 50vw, 65vw);
+    width: clamp(40vw, 42rem, 62vw);
+}
+
+@media(max-width: 760px) {
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: clamp(16rem, 18rem, 21rem);
+        flex: 100%;
+    }
+    
+    .text {
+        display: none;
+    }
+    
+    #camiseta {
+        width: clamp(20rem, 22rem, 24rem);
+    }
 }
