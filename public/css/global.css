@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background: #fff;
+    --text: #5645;
+}
+
+[data-theme="dark"] {
+    --background: #fff;
+    --text: #5645;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-image: url("../img/Background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    margin: auto;
+}
+
+main h2{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    text-size-adjust: 18px;
+    color: white;
+}
+
+main h1{
+    color: #FF1BCA;
+    text-size-adjust: 24px;
+    /* margin-left: 2.5rem;
+    margin-bottom: .8rem; */
+}
+
+main p{
+    color: white;
+    margin-left: 2.5rem;
+}
+
+@media(max-width: 1080px) {
+    html {
+        font-size: 90%;
+    }
+}
+
+@media(max-width: 720px) {
+    html {
+        font-size: 82%;
+    }
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+
+
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    background-color: #ffffff;
+    
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    
+    height: 26px;
+    width: 26px;
+    
+    left: 4px;
+    bottom: 4px;
+    
+    background: no-repeat center/90% url('../Img/sun.svg');
+
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+
+input:checked + .slider {
+    background-color: #48312a81;
+}
+
+
+input:checked + .slider::before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+
+    background: no-repeat center/90% url('../Img/Lua.svg');
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round::before {
+    border-radius: 50%;
+}
