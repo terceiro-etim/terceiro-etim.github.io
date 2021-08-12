@@ -16,7 +16,7 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background-image: url("../img/Background.svg");
+    /* background-image: url("../img/Background.svg"); */
     background-repeat: no-repeat;
     background-size: cover;
 }

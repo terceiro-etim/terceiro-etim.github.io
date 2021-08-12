@@ -20,14 +20,22 @@ nav {
 nav a {
     display: flex;
     flex-direction: column;
+    position: relative;
+}
 
+nav a::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: -15px;
+    right: 0px;
+    left: -18px;
 }
 
 nav a:hover::after {
-    content: "";
-    width: 3rem;
-    height: 2rem;
+    width: 4rem;
+    height: 3rem;
     background: rgba(116, 227, 255, 0.5);
-    filter: blur(5px);
+    filter: blur(1.6rem);
     border-radius: 30.5px;
 }
