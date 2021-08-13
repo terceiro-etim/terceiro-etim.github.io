@@ -108,7 +108,7 @@ header {
     left: 4px;
     bottom: 4px;
     
-    background: no-repeat center/90% url('../Img/sun.svg');
+    background: no-repeat center/90% url('../img/sun.svg');
 
     -webkit-transition: .4s;
     transition: .4s;
@@ -125,7 +125,7 @@ input:checked + .slider::before {
     -ms-transform: translateX(26px);
     transform: translateX(26px);
 
-    background: no-repeat center/90% url('../Img/Lua.svg');
+    background: no-repeat center/90% url('../img/Lua.svg');
 }
 
 /* Rounded sliders */
