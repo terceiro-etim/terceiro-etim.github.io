@@ -34,7 +34,7 @@ nav a::after {
 
 nav a:hover::after {
     width: 4rem;
-    height: 3rem;
+    height: 1.5rem;
     background: rgba(116, 227, 255, 0.5);
     filter: blur(1.6rem);
     border-radius: 30.5px;

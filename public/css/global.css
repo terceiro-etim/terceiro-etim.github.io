@@ -14,11 +14,27 @@
     --text: #5645;
 }
 
+
 body {
     font-family: 'Inter', sans-serif;
-    /* background-image: url("../img/Background.svg"); */
+    background-image: url("../img/Background.svg");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+
+header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+header button {
+    margin-right: 2.4rem;
+    border: none;
+    background: transparent;
+    cursor: pointer;
 }
 
 main {
@@ -30,24 +46,26 @@ main {
     margin: auto;
 }
 
-main h2{
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    text-align: center;
-    text-size-adjust: 18px;
+main h2 {
+    margin: 2.4rem 0;
     color: white;
 }
 
-main h1{
+main .text {
+    margin: auto;
+    padding: 1rem;
+}
+
+main .text h1 {
+    margin-bottom: 0.4rem;
+    text-align: left;
     color: #FF1BCA;
-    text-size-adjust: 24px;
-    /* margin-left: 2.5rem;
-    margin-bottom: .8rem; */
 }
 
-main p{
+main .text p {
+    text-align: justify;
     color: white;
-    margin-left: 2.5rem;
+    opacity: 80%;
 }
 
 @media(max-width: 1080px) {
@@ -62,19 +80,12 @@ main p{
     }
 }
 
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
 .switch {
     position: relative;
     display: inline-block;
 
-
-    width: 60px;
-    height: 34px;
+    width: 45px;
+    height: 22px;
 }
 
 .switch input {
@@ -92,7 +103,7 @@ header {
     right: 0;
     bottom: 0;
     
-    background-color: #ffffff;
+    background-color: #48312A;
     
     -webkit-transition: .4s;
     transition: .4s;
@@ -101,31 +112,27 @@ header {
 .slider:before {
     position: absolute;
     content: "";
-    
     height: 26px;
     width: 26px;
-    
-    left: 4px;
-    bottom: 4px;
-    
-    background: no-repeat center/90% url('../img/sun.svg');
-
+    left: 0px;
+    bottom: -2px;
+    background: no-repeat center/72% url(../img/sun.svg);
     -webkit-transition: .4s;
     transition: .4s;
 }
 
 
 input:checked + .slider {
-    background-color: #48312a81;
+    background-color: #48312A;
 }
 
 
 input:checked + .slider::before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
-    transform: translateX(26px);
+    transform: translateX(20px);
 
-    background: no-repeat center/90% url('../img/Lua.svg');
+    background: no-repeat center/68% url('../img/Lua.svg');
 }
 
 /* Rounded sliders */
@@ -135,4 +142,9 @@ input:checked + .slider::before {
 
 .slider.round::before {
     border-radius: 50%;
+}
+
+footer {
+    color: rgba(255, 255, 255, 40%);
+    text-align: center;
 }
