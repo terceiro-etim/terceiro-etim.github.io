@@ -1,41 +1,110 @@
 nav {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
 
-    background: #121212;
-    opacity: 80%;
+  background: #121212;
+  opacity: 80%;
 
-    border-radius: 40px 40px 0px 0px;
-    
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  border-radius: 40px 40px 0px 0px;
 
-    width: 1fr;
-    height: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  width: 1fr;
+  height: 5rem;
 }
 
 nav a {
-    display: flex;
-    flex-direction: column;
-    position: relative;
+  display: flex;
+  color: rgba(116, 227, 255, 0.5);
+  flex-direction: column;
+  position: relative;
 }
 
 nav a::after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    bottom: -15px;
-    right: 0px;
-    left: -18px;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: -15px;
+  right: 0px;
+  left: -18px;
 }
 
 nav a:hover::after {
-    width: 4rem;
-    height: 1.5rem;
-    background: rgba(116, 227, 255, 0.5);
-    filter: blur(1.6rem);
-    border-radius: 30.5px;
+  width: 4rem;
+  height: 1.5rem;
+  background: rgba(116, 227, 255, 0.5);
+  filter: blur(1.6rem);
+  border-radius: 30.5px;
+}
+
+#slides {
+  height: 41.6vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#slides button {
+  background: rgba(255, 255, 255, 0);
+  border: none;
+  font-size: 1.5em;
+  z-index: 10;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  border: double 3px transparent;
+  border-radius: 50%;
+  background-image: linear-gradient(90deg, #FFA1D3 -31.05%, #8BE7FE 54.14%, #D6FFFF 141.13%);
+  /* border-image: linear-gradient(90deg, #FFA1D3 -31.05%, #8BE7FE 54.14%, #D6FFFF 141.13%) 1; */
+}
+
+.slide:nth-child(2) {
+  order: 1;
+}
+
+.slide:nth-child(3) {
+  order: 2;
+}
+
+.slide:nth-child(4) {
+  order: 3;
+}
+
+#prev {
+  order: 0;
+  margin-right: -7.3rem;
+  cursor: pointer;
+}
+
+#next {
+  order: 10;
+  margin-left: -7.3rem;
+  cursor: pointer;
+}
+
+@keyframes aa {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes bb {
+  0% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
