@@ -4,22 +4,9 @@
     box-sizing: border-box;
 }
 
-:root {
-    --background: #fff;
-    --text: #5645;
-}
-
-[data-theme="dark"] {
-    --background: #fff;
-    --text: #5645;
-}
-
-
 body {
     font-family: 'Inter', sans-serif;
-    background-image: url("../img/Background.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: center / cover no-repeat url("../img/Background.png");
 }
 
 

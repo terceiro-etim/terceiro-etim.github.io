@@ -41,7 +41,6 @@ function style() {
         if (window.getComputedStyle(slide[i]).order == 2) {
             slide[i].style.zIndex = 10;
             slide[i].style.opacity = "1";
-            slide[i].style.animation = "bb 0.2s ease-in-out 0.2s forwards";
             slide[i].style.marginRight = "0";
             slide[i].style.marginLeft = "0";
             slide[i].style.height = "18rem";
@@ -51,17 +50,17 @@ function style() {
             slide[i].style.zIndex = 0;
             slide[i].style.marginRight = "-80px";
             slide[i].style.marginLeft = "0";
-            slide[i].style.animation = "aa 0.2s ease-in-out 0.2s forwards";
             slide[i].style.height = "15.3rem";
             slide[i].style.width = "15.3rem";
+            slide[i].style.opacity = "0.5";
         }
         else {
             slide[i].style.zIndex = 0;
             slide[i].style.marginLeft = "-80px";
             slide[i].style.marginRight = "0";
-            slide[i].style.animation = "aa 0.2s ease-in-out 0.2s forwards";
             slide[i].style.height = "15.3rem";
             slide[i].style.width = "15.3rem";
+            slide[i].style.opacity = "0.5";
         }
     }
 }
