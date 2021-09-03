@@ -9,6 +9,10 @@ body {
     background: center / cover no-repeat url("../img/Background.png");
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
 
 header {
     display: grid;
@@ -22,6 +26,7 @@ header button {
     border: none;
     background: transparent;
     cursor: pointer;
+    z-index: 11;
 }
 
 main {
@@ -55,6 +60,49 @@ main .text p {
     opacity: 100%;
 }
 
+.menu-overlay {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 11;
+    background: center / cover no-repeat url("../img/Background.png");
+}
+
+.menu-overlay h2 {
+    color: #BDEDFF;
+}
+
+.menu-overlay button.option {
+    padding: 0.8rem 0;
+    width: 15.75rem;
+    border-width: 1px;
+    border: double 2px transparent;
+    margin: 2.5rem 0;
+    background-image: linear-gradient(90deg,#29111a, #180606), radial-gradient(circle at top left, #FFA1D3 -31.05%,#8BE7FE 54.14%, #D6FFFF 141.13%);
+    border-radius: 5rem;
+    color: white;
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    cursor: pointer;
+    transition: font-weight 0.2s;
+}
+
+.menu-overlay button.option:hover {
+    font-weight: 700;
+}
+
+footer {
+    margin: 1rem 0;
+    color: rgba(255, 255, 255, 40%);
+    text-align: center;
+}
+
 @media(max-width: 1080px) {
     html {
         font-size: 90%;
@@ -65,9 +113,4 @@ main .text p {
     html {
         font-size: 82%;
     }
-}
-
-footer {
-    color: rgba(255, 255, 255, 40%);
-    text-align: center;
 }

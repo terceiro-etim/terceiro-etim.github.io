@@ -65,4 +65,24 @@ function style() {
     }
 }
 
+const overlayButton = document.querySelector('[data-js="buttonMenu"]');
+const menuOverlay = document.querySelector('[data-js="menu-overlay"]');
+
+const menuImage = document.querySelector('[data-js="menuImage"]');
+
+overlayButton.addEventListener('click', () => {
+    const overlayState = menuOverlay.style.display;
+
+    if (overlayState === "flex") {
+        menuOverlay.style.display = "none";
+        menuImage.src = "public/img/Menu.svg"
+        console.log(menuImage)
+    } else {
+        console.log(menuImage)
+        menuOverlay.style.display = "flex";
+        menuImage.src = "public/img/xmenu.svg"
+    }
+});
+
+
 window.onload = style;

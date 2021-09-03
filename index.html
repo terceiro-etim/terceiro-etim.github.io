@@ -17,18 +17,31 @@
 </head>
 
 <body>
+    <div class="menu-overlay" data-js="menu-overlay"> 
+        <h2>Menu</h2>
+
+        <button class="option">
+            <a href="/"> Home </a>
+        </button>
+        <button class="option">
+          <a href="#"> Fotos </a>
+        </button>
+        <button class="option">
+            <a href="#"> Contatos </a>
+        </button>
+        <button class="option">
+            <a href="#"> Escola </a>
+        </button>
+    </div>
+
     <div class="container">
         <header>
-            <button>
-                <img src="./public/img/Menu.svg" alt="Icon Menu">
+            <button data-js="buttonMenu">
+                <img data-js="menuImage" src="./public/img/Menu.svg" alt="Icon Menu">
             </button>
             <a href="#">
-                <img src="./public/img/Logo.svg" alt="Logo da sala">
+                <img src="public/img/Logo.svg" alt="Logo da sala">
             </a>
-            <!-- <label class="switch">
-                <input type="checkbox">
-                <span class="slider round"></span>
-            </label> -->
         </header>
         <main>
             <h2>Bem-vindo! Amigo(a)</h2>
@@ -60,26 +73,13 @@
             </button>
         </div>
 
+        <br><br>
+
         <footer>
             <p>Em memória de Symon Harley <br> 2003 - 2020</p>
         </footer>
-        <br><br><br><br><br>
-       <!--  <nav>
-            <a href="#">
-                <img src="public/img/home.svg" alt="home">
-            </a>
-            <a href="#">
-                <img src="public/img/gallery.svg" alt="gallery">
-            </a>
-            <a href="#">
-                <img src="public/img/contact.svg" alt="contact">
-            </a>
-            <a href="#">
-                <img src="public/img/graduation.svg" alt="graduation">
-            </a>
-        </nav> -->
         <script src="index.js"></script>
     </div>
 </body>
 
-</html>
+</html
