@@ -1,0 +1,31 @@
+.container main {
+    margin: 1rem 0 4rem 0;
+}
+
+.container main p,
+.container main strong {
+    color: #fff;
+    margin: 2rem 0;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.container main .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 5px;
+}
+
+.container main .gallery .gallery-image {
+    margin: 0 5px;
+}
+
+.container main .gallery .gallery-image:nth-child(3n + 2) {
+    margin: 0;
+}
+
+.container main .gallery .gallery-image img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}

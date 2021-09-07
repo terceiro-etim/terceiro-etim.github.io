@@ -7,6 +7,7 @@
 body {
     font-family: 'Inter', sans-serif;
     background: center / cover no-repeat url("../img/Background.png");
+    background-size: 100vh;
 }
 
 a {
@@ -27,37 +28,6 @@ header button {
     background: transparent;
     cursor: pointer;
     z-index: 11;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-
-    margin: auto;
-}
-
-main h2 {
-    margin: 2.4rem 0;
-    color: white;
-}
-
-main .text {
-    margin: auto;
-    padding: 1.875rem;
-}
-
-main .text h1 {
-    margin-bottom: 0.4rem;
-    text-align: left;
-    color: #FF8DC4;
-}
-
-main .text p {
-    text-align: justify;
-    color: #E0E0E0;
-    opacity: 100%;
 }
 
 .menu-overlay {

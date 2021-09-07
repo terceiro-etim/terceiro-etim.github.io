@@ -11,10 +11,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="public/css/global.css">
-    <link rel="stylesheet" href="public/css/pages/index.css">
-    <link rel="shortcut icon" href="public/img/Logo.svg" type="img/x-icon"/>
+    <link rel="stylesheet" href="public/css/pages/gallery.css">
 
-    <title> Terceiro Etim </title>
+    <link rel="shortcut icon" href="public/img/Logo.svg" type="img/x-icon"/>
+    <title> Galeria </title>
 </head>
 
 <body>
@@ -44,42 +44,45 @@
                 <img src="public/img/Logo.svg" alt="Logo da sala">
             </a>
         </header>
+
         <main>
-            <p> <strong> Bem-vindo! </strong> Amigo(a)</p>
-
-            <div class="text">
-                <h1>SOBRE NÓS</h1>
-                <p>Somos uma turma que teve início no ano de 2018 na escola ETEC Comendador João Rays, que fica
-                    localizada na cidade de Barra Bonita - SP. Nesse site está nosso acervo de fotos e memórias durante
-                    todo esse período que se encerrou em 2020.</p>
+            <p> Nossas <strong> melhores </strong> fotos! </p>
+            <div class="gallery">
+                <div class="gallery-image">
+                    <img src="public/img/Foto1.jpg">
+                </div>
+                <div class="gallery-image">
+                    <img src="public/img/Foto2.jpg">
+                </div>
+                <div class="gallery-image">
+                    <img src="public/img/Foto3.jpg">
+                </div>
+                <div class="gallery-image">
+                    <img src="public/img/gallery/lanche.jpg">
+                </div>
+                <div class="gallery-image">
+                    <img src="public/img/gallery/roger.jpg">
+                </div>
+                <div class="gallery-image">
+                    <img src="public/img/gallery/unesp.jpg">
+                </div>
+                <div class="gallery-image">
+                    <img src="public/img/gallery/trote.jpg">
+                </div>
+                <div class="gallery-image">
+                    <img src="public/img/gallery/2ano.jpg">
+                </div>
+                <div class="gallery-image">
+                    <img src="public/img/gallery/wigao.jpg">
+                </div>
             </div>
-
-            <div id="slides">
-                <button id="prev" onclick="prev()">
-                    <img src="./public/img/prev.svg" alt="prev"> 
-                </button>
-                <div class="slide">
-                    <img class="slide-img" src="/public/img/Foto3.jpg" alt="">
-                </div>
-                <div class="slide">
-                    <img class="slide-img" src="/public/img/Foto2.jpg" alt="">
-                </div>
-                <div class="slide">
-                    <img class="slide-img" src="/public/img/Foto1.jpg" alt="">
-                </div>
-                <button id="next" onclick="next()">
-                    <img src="./public/img/next.svg" alt="next"> 
-                </button>
-            </div>
-
         </main>
-
-        <!-- <br><br> -->
-
+        
         <footer>
             <p>Em memória de Symon Harley <br> 2003 - 2020</p>
         </footer>
     </div>
+
     <script src="index.js"></script>
 </body>
 
