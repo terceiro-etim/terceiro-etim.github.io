@@ -1,0 +1,19 @@
+.container .contact {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin: 0.8rem 0;
+}
+
+.container .contact img {
+    margin-left: 2rem;
+}
+
+.container .contact details {
+    margin-left: 3rem;
+    cursor: pointer;
+}
+
+.contact summary{
+    font-weight: 700;
+}

@@ -2,14 +2,6 @@
     margin: 1rem 0 4rem 0;
 }
 
-.container main p,
-.container main strong {
-    color: #fff;
-    margin: 2rem 0;
-    text-align: center;
-    font-size: 1.2rem;
-}
-
 .container main .gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

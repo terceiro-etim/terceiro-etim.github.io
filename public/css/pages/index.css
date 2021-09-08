@@ -2,14 +2,6 @@
   overflow: hidden;
 }
 
-.container main > p,
-.container main > strong {
-  color: #fff;
-  font-size: 1.2rem;
-  margin: 2rem 0;
-}
-
-
 .container main {
   display: flex;
   flex-direction: column;
