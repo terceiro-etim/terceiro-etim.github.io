@@ -7,8 +7,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-
-  margin: auto;
 }
 
 .container main .text {
@@ -28,7 +26,8 @@
 }
 
 .container main #slides {
-  height: 35vh;
+  height: 45vh;
+  margin-bottom: 7rem;
   color: white;
   display: flex;
   align-items: center;

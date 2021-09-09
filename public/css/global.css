@@ -10,7 +10,7 @@ body {
     /* background-size: 100vh; */
     background: rgb(12,3,0);
     background: center / cover no-repeat linear-gradient(180deg, rgba(12,3,0,1) 0%, rgba(22,4,8,1) 10%, rgba(31,6,11,1) 22%, rgba(33,6,10,1) 33%, rgba(31,3,21,1) 44%, rgba(28,6,28,1) 53%, rgba(24,17,33,1) 69%, rgba(24,26,39,1) 84%, rgba(22,27,38,1) 95%);
-    background-size: auto;
+    /* background-size: 200vh; */
 }
 
 a {
